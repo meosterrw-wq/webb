@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+  }
+
+
+  
+
+
+  .my-button {
+  background-color: #5a9;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+}
+
+.my-button:hover {
+  background-color: #4c8;
+}
+
+
+
+
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    color: rgb(113, 193, 113);
+  }
+  
+  header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 50px;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .top-guide {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #333;
+  }
+  
+  .top-guide h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .top-guide .top-guide-link h2 {
+    font-size: 24px;
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .top-guide-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 10%;
+  }
+  
+  .games-column, .guides-column {
+    width: 45%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+  
+  .games-column:last-child, .guides-column:last-child {
+    margin-right: 0;
+  }
+  
+  .games-column h1, .guides-column h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .game-card, .guide-card {
+    background-color: #444;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .game-card img, .guide-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .game-card p, .guide-card p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+  footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+
+  .slick-slider{
+    margin-top: 30px;
+    display: flex !important;
+    align-items: center;
+  }
+
+  .carousel__item{
+    display: flex !important;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+
+
+  @media (max-width: 500px) {
+    .columns {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      padding: 10px;
+    }
+  
+    .games-column,
+    .guides-column {
+      width: 100%;
+      margin: 0 0 20px 0;
+    }
+  
+    .game-card,
+    .guide-card {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .section-title,
+    h1 {
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .top-guide-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    nav a {
+      display: inline-block;
+      margin: 5px 8px;
+      font-size: 14px;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+    
+    }
+
+    .burgermenu{
+      display: block;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-image: url(img/open.png);
+      background-size: contain;
+      top: 15px;
+      left: calc(100% - 50px);
+      z-index: 9;
+    }
+
+    .main-nav{
+      position: absolute;
+      width: 100%;
+      top: 10px;
+      background-color: #1e1e1e;
+      height: 100vh;
+      padding: 20px 5px;
+      transform: translate(1000px);
+    }
+
+    .main-nav > ul {
+      display: flex;
+      flex-direction: column; 
+    }
+
+    .main-nav > ul a{
+      font-size: 25px;
+      color: #fff;
+    }
+
+    /* active */
+
+    .burger-menu.active {
+      z-index: 3;
+      transform: translateX(-40vw);
+      transition: 0.3s ease;
+      background-image: url(img/close.png);
+    }
+ 
+
+
+    .main-nav.active {
+       transform: translate(0);
+       transition: 0.3s ease;
+    }
+       
+    }
